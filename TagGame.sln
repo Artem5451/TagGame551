@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagGame", "TagGame\TagGame.csproj", "{90417101-118E-48A6-AECF-A136980C31B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagGameLib", "TagGameLib\TagGameLib.csproj", "{2DC32785-0FCE-4497-A663-8C0763C7A051}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagGameWPF", "TagGameWPF\TagGameWPF.csproj", "{6DFC31C5-786A-4B25-9602-1BBDB2709577}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90417101-118E-48A6-AECF-A136980C31B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90417101-118E-48A6-AECF-A136980C31B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90417101-118E-48A6-AECF-A136980C31B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90417101-118E-48A6-AECF-A136980C31B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DC32785-0FCE-4497-A663-8C0763C7A051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DC32785-0FCE-4497-A663-8C0763C7A051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DC32785-0FCE-4497-A663-8C0763C7A051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DC32785-0FCE-4497-A663-8C0763C7A051}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DFC31C5-786A-4B25-9602-1BBDB2709577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DFC31C5-786A-4B25-9602-1BBDB2709577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DFC31C5-786A-4B25-9602-1BBDB2709577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DFC31C5-786A-4B25-9602-1BBDB2709577}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B74B3043-B292-4D55-8851-366B4656AD9B}
+	EndGlobalSection
+EndGlobal

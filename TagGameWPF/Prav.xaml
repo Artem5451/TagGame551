@@ -1,0 +1,56 @@
+﻿<Window x:Class="TagGameWPF.Prav"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TagGameWPF"
+        mc:Ignorable="d"
+        Title="Правила" Height="450" Width="800"
+         WindowState="Maximized"
+        WindowStyle="ToolWindow">
+    <Grid RenderTransformOrigin="0.5,0.5">
+        <Grid.Resources>
+            <Style x:Key="RoundedButtonStyle" TargetType="Button">
+                <Setter Property="Background" Value="Gold"/>
+                <Setter Property="Foreground" Value="#FF010000"/>
+                <Setter Property="Height" Value="50"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}" 
+                                 BorderBrush="Transparent" 
+                                 CornerRadius="20">
+                                <ContentPresenter HorizontalAlignment="Center" 
+                                               VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="333*"/>
+            <RowDefinition Height="101*"/>
+        </Grid.RowDefinitions>
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0.145"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.Background>
+            <ImageBrush ImageSource="/cd1d3bcf3898a29c37346e2fbed4300a.jpg"/>
+        </Grid.Background>
+
+        <Button MaxHeight="100" MaxWidth="500" Content="Закрыть" 
+             Click="Button_Click" 
+             Style="{StaticResource RoundedButtonStyle}" 
+             Margin="315,28,315,23" RenderTransformOrigin="0.5,0.5" FontSize="22" FontWeight="Bold" Grid.Row="1"/>
+        <TextBox MaxWidth="800" HorizontalAlignment="Center" Margin="50,15,0,0" TextWrapping="Wrap" Text="Правила игры в «Пятнашки» в приложении: &#x0a; &#x0a;
+Базовые правила. Классическая версия игры состоит из 15 фишек (на каждой из которых нарисована цифра) и одной пустой клетки. Фишки можно двигать горизонтально и вертикально, меняя местами с пустой клеткой. &#x0a; &#x0a;Цель игры состоит в том, чтобы расположить все 15 фишек в правильном порядке, а пустую клетку поставить в правый нижний угол. &#x0a;&#x0a;Способы перемещения фишек в игре: &#x0a;
+Клики. Нужно кликнуть на фишку, чтобы переместить её. Также можно перемещать несколько фишек. 1" Width="720" Height="353" TextChanged="TextBox_TextChanged" Background="{x:Null}" UndoLimit="1000000" FontSize="20" BorderBrush="{x:Null}" VerticalAlignment="Center" Grid.RowSpan="2" FontWeight="Bold"/>
+    </Grid>
+</Window>
